@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #323232;
+    border: none;
+}
+
+body {
+    height: 100vh;
+    padding-top: 20vh;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+input:focus, label:focus {
+    outline: none;
+}
+
+a {
+    color: #f4303d;
+}
+
+#main-container {    
+    width: 70%;
+    min-width: 500px;
+    max-width: 100px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#main-container h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+}
+
+#main-container #required-text {      
+    text-align: right;
+    font-size: 0.6rem;
+    color: rgb(150, 150, 150)
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box {
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.spacing {    
+    margin-right: 2.5%;    
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.8rem
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+
+input:focus {
+    border-color: #f4303d
+}
+
+input[type="submit"] {
+    background-color: #f4303d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#input-agreement, #label-agreement {
+    display: inline-block;
+    width: auto;
+}
+
+.error-validation, .error-agreement-validation {
+    position: absolute;    
+    color: red;    
+    font-size: 0.8rem;       
+}
+
+.error-validation {    
+    top: 57px;
+}
+
+.error-agreement-validation {    
+    top: 20px;          
+}
+
+
+
